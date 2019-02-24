@@ -1,3 +1,8 @@
+import os
+os.environ['SDL_AUDIODRIVER'] = 'dsp'
+os.putenv('SDL_VIDEODRIVER', 'fbcon')
+os.environ["SDL_VIDEODRIVER"] = "dummy"
+
 import gym
 import gym_flappy_bird
 
