@@ -1,5 +1,5 @@
 gym_flappy_bird/__pycache__/
 gym_flappy_bird/envs/__pycache__/
-.pkl
+*.pkl
 tmp/
 
