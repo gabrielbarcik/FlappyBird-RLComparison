@@ -11,11 +11,11 @@ from stable_baselines.common.vec_env import SubprocVecEnv
 from stable_baselines import PPO2
 
 # multiprocess environment
-n_cpu = 1
+n_cpu = 8
 env = SubprocVecEnv([lambda: gym.make('flappy-bird-v0') for i in range(n_cpu)])
 
-model = PPO2(MlpPolicy, env, verbose=1)
-model.learn(total_timesteps=25000)
+model = PPO2(MlpPolicy, env, verbose=1, tensorboard_log='./tmp/flappy_bird25000/')
+model.learn(total_timesteps=1000000)
 model.save("ppo2_flappy_bird")
 
 print('Finished')
