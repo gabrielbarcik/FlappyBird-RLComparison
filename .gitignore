@@ -4,4 +4,5 @@ gym_flappy_bird/envs/__pycache__/
 *.out
 tmp/
 .ipynb_checkpoints/
+__pycache__/
 
