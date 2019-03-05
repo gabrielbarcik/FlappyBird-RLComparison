@@ -2,6 +2,7 @@ import gym
 from gym import error, spaces, utils
 from gym.utils import seeding
 import numpy as np
+import cv2
 import sys
 import random
 import pygame
@@ -42,7 +43,15 @@ class FlappyBirdEnv(gym.Env):
         self.action_space = spaces.Discrete(2)
         self.observation_space = spaces.Box(low=0, high=255, shape=(
             self.screenheight, self.screenwidth, 3), dtype=np.uint8)
+        
+        # seeding
+        self.seed()
 
+    def seed(self, seed=None):
+        self.np_random, seed = seeding.np_random(seed)
+        return [seed]
+
+    
     def step(self, input_actions):
         pygame.event.pump()
 
