@@ -25,7 +25,7 @@ from env_wrapper import make_flappy_env
 
 ENV_ID = 'flappy-bird-v0'
 
-env = make_flappy_env(ENV_ID, num_env=16, seed=0)
+env = make_flappy_env(ENV_ID, num_env=1, seed=0)
 # Frame-stacking with 4 frames
 env = VecFrameStack(env, n_stack=4)
 
