@@ -79,10 +79,10 @@ env = DummyVecEnv([lambda: env])
 
 #model = PPO2(MlpPolicy, env, verbose=1)
 #model = DQN(MlpPolicy, env, verbose=1)
-#model = ACER(MlpPolicy, env, verbose=1)
+model = ACER(MlpPolicy, env, verbose=1)
 
 print('loading model')
-model = PPO2.load('ppo2_flappy_bird_cnn_test_dummy_test')
+#model = PPO2.load('acer_2300k_test')
 #model.learn(total_timesteps=10000, callback = callback)
 #model.learn(total_timesteps=10000)
 import time
@@ -92,7 +92,7 @@ for i in range(1000):
     action, _states = model.predict(obs)
     obs, rewards, dones, info = env.step(action)
     #print(obs.shape)
-    time.sleep(0.03)
+    time.sleep(0.08)
     #import pdb; pdb.set_trace()
     env.render()
 
