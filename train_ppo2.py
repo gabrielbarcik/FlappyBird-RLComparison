@@ -8,9 +8,7 @@ import gym_flappy_bird
 
 from stable_baselines.common.cmd_util import make_atari_env
 from stable_baselines.common.policies import CnnPolicy
-from stable_baselines.common.vec_env import DummyVecEnv
-from stable_baselines.common.vec_env import SubprocVecEnv
-from stable_baselines.common.vec_env import VecFrameStack
+from stable_baselines.common.vec_env import DummyVecEnv, SubprocVecEnv, VecFrameStack
 from stable_baselines import PPO2
 
 from env_wrapper import make_flappy_env

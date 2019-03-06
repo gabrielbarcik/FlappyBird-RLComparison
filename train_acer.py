@@ -8,8 +8,7 @@ import gym_flappy_bird
 import datetime
 
 from stable_baselines.common.policies import MlpPolicy, MlpLstmPolicy, MlpLnLstmPolicy, CnnPolicy
-from stable_baselines.common.vec_env import DummyVecEnv
-from stable_baselines.common.vec_env import VecFrameStack
+from stable_baselines.common.vec_env import DummyVecEnv, VecFrameStack
 
 from env_wrapper import make_flappy_env
 from stable_baselines import ACER
