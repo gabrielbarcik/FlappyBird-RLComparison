@@ -21,16 +21,16 @@ env = make_flappy_env(ENV_ID, num_env=1, seed=0)
 # Frame-stacking with 4 frames
 env = VecFrameStack(env, n_stack=4)
 
-model = DQN(CnnPolicy, env, verbose=1, tensorboard_log='./dqn/flappy_bird_dqn_200_testCheckpoint')
+model = DQN(CnnPolicy, env, verbose=1, tensorboard_log='./dqn/dqn_2300k_timetest')
 
 
 start_time = datetime.datetime.now()
 
-model.learn(total_timesteps=1000)
+model.learn(total_timesteps=2300000)
 
 print(datetime.datetime.now() - start_time)
 
-model.save("dqn_test_10k")
+model.save("dqn_2300k")
 
 print('Finished')
 
