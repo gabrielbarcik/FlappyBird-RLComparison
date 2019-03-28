@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 from __future__ import print_function
 
+import os
+os.environ['SDL_AUDIODRIVER'] = 'dsp'
+os.putenv('SDL_VIDEODRIVER', 'fbcon')
+os.environ["SDL_VIDEODRIVER"] = "dummy"
+
 import tensorflow as tf
 import pickle
 import cv2
@@ -14,10 +19,10 @@ from collections import deque
 GAME = 'bird' # the name of the game being played for log files
 ACTIONS = 2 # number of valid actions
 GAMMA = 0.99 # decay rate of past observations
-#OBSERVE = 100000. # timesteps to observe before training
-OBSERVE = 1000 # timesteps to observe before training
-#EXPLORE = 2000000. # frames over which to anneal epsilon
-EXPLORE = 2000. # frames over which to anneal epsilon
+OBSERVE = 10000. # timesteps to observe before training
+#OBSERVE = 1000 # timesteps to observe before training
+EXPLORE = 200000. # frames over which to anneal epsilon
+#EXPLORE = 2000. # frames over which to anneal epsilon
 FINAL_EPSILON = 0.0001 # final value of epsilon
 INITIAL_EPSILON = 0.0001 # starting value of epsilon
 REPLAY_MEMORY = 50000 # number of previous transitions to remember
