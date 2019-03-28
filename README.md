@@ -6,9 +6,14 @@ We have adapted an existing environment based on pygame() FlappyBird to the know
 
 Our agents are based on the algorithms developped by openAI and made avaialable in the github of 'stable-baselines'.
 
-Project under developpement.
+We also train the agent using the DQN architecture implemented using tensorflow for comparison
 
-*** How to use ***
+### Aknowledgements
+The work described here wouldn't be possible without the following repositories
+1. hill-a/stable-baselines
+2. floodsung/Gym-Flappy-Bird
+3. yenchenlin/DeepLearningFlappyBird: 
+And all the papers described in our report.
 
 
 
