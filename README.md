@@ -23,7 +23,8 @@ To test and bechmark our implementation we used the Google Compute Platform. It 
 The work described here wouldn't be possible without the following repositories
 1. hill-a/stable-baselines
 2. floodsung/Gym-Flappy-Bird
-3. yenchenlin/DeepLearningFlappyBird: 
+3. yenchenlin/DeepLearningFlappyBird
+
 And all the papers described in our report.
 
 
