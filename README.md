@@ -8,6 +8,9 @@ Our agents are based on the algorithms developped by openAI and made avaialable 
 
 We also train the agent using the DQN architecture implemented using tensorflow for comparison
 
+### Benchmarking
+To test and bechmark our implementation we used the Google Compute Platform. It was the ideal solution, as the training of these networks are usually very compute intensive and higly dependent on specifific hardware, such as GPUs
+
 ### Aknowledgements
 The work described here wouldn't be possible without the following repositories
 1. hill-a/stable-baselines
