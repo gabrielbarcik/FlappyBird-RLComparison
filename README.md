@@ -17,7 +17,7 @@ We also train the agent using the DQN architecture implemented using tensorflow 
 Attention, a lot of computational power is needed to obtain good result, consider using GPUs
 
 ### Benchmarking
-To test and bechmark our implementation we used the Google Compute Platform. It was the ideal solution, as the training of these networks are usually very compute intensive and higly dependent on specifific hardware, such as GPUs
+To test and bechmark our implementation we used the Google Compute Platform. It was the ideal solution, as the training of these networks are usually very compute intensive and highly dependent on specifific hardware, such as GPUs.
 
 ### Aknowledgements
 The work described here wouldn't be possible without the following repositories
@@ -26,6 +26,3 @@ The work described here wouldn't be possible without the following repositories
 3. yenchenlin/DeepLearningFlappyBird
 
 And all the papers described in our report.
-
-
-
